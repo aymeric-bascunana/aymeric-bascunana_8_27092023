@@ -1,12 +1,11 @@
-.Home {
+.header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-top: 20px;
 }
 
-h1 {
-  color: #fb3f3f;
-  font-size: 80px;
+img {
   margin: 0px 0px 0px 50px;
 }
 
