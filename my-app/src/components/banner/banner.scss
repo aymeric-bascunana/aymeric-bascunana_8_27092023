@@ -4,7 +4,7 @@
   flex-direction: column;
 }
 
-p {
+.img-title {
   border-radius: 10px;
   width: 75%;
   height: 175px;
@@ -21,10 +21,19 @@ p {
 }
 
 h2 {
-  background-color: #fb3f3f;
+  background-color: rgba(255, 96, 96, 1);
   border-radius: 10px;
   width: 20%;
   height: 240px;
   font-size: 15px;
   color: white;
+  display: flex;
+  align-items: flex-end;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 90px;
+  justify-content: center;
 }

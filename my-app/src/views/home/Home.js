@@ -1,6 +1,7 @@
 import "../home/Home.scss";
 import Banner from "../../components/banner/banner";
 import Header from "../../components/header/header";
+import Footer from "../../components/footer/footer";
 
 function Home() {
   return (
@@ -14,6 +15,7 @@ function Home() {
       </div> */}
       <Header />
       <Banner />
+      <Footer />
     </>
   );
 }
