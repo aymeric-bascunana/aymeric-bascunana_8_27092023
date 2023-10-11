@@ -5,6 +5,7 @@ import "./index.css";
 // import App from "./App";
 import Home from "./views/home/Home";
 import Error from "./components/Error/error";
+import Logement from "./components/Logement/logement";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -16,6 +17,7 @@ root.render(
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Error" element={<Error />} />
+        <Route path="/Logement" element={<Logement />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,0 +1,55 @@
+.container-carrousel {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0px 30px 0px;
+}
+
+.carrousel {
+  width: 80%;
+}
+
+.container-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 125px 0px 125px;
+}
+.name-logement {
+  color: rgba(255, 96, 96, 1);
+  margin: 0px;
+  font-size: 30px;
+}
+
+.position {
+  color: rgba(255, 96, 96, 1);
+  margin: 5px 0px 15px 0px;
+}
+
+.container-btn {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  background-color: rgba(255, 96, 96, 1);
+  color: white;
+  border-radius: 10px;
+  width: 7%;
+  height: 25px;
+  border: none;
+}
+
+.btn-info {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin: 25px 0px 50px 0px;
+}
+
+.btninfo {
+  background-color: rgb(255, 96, 96);
+  color: white;
+  border-radius: 8px;
+  width: 50%;
+  height: 40px;
+  border: none;
+}
