@@ -1,6 +1,6 @@
-import "../Logement/logement.scss";
-import Header from "../header/header";
-import Footer from "../footer/footer";
+import "./logement.scss";
+import Header from "../../components/header/header";
+import Footer from "../../components/footer/footer";
 import Carrousel from "../../assets/Carrousel.png";
 
 function Logement() {
