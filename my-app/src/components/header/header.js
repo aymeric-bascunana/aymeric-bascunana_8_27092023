@@ -10,7 +10,7 @@ function Header() {
         <NavLink className="lien" to="/">
           Accueil
         </NavLink>
-        <NavLink className="lien" to="/">
+        <NavLink className="lien" to="/About">
           A Propos
         </NavLink>
         {/* <a className="lien"> Accueil </a>

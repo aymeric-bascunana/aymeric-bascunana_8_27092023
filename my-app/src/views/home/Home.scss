@@ -21,3 +21,10 @@ nav {
   top: 25px;
   margin-right: 30px;
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+}

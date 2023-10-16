@@ -6,6 +6,7 @@ import "./index.css";
 import Home from "./views/home/Home";
 import Error from "./views/Error/error";
 import Logement from "./views/Logement/logement";
+import About from "./views/About/about";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -18,6 +19,7 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/Error" element={<Error />} />
         <Route path="/Logement" element={<Logement />} />
+        <Route path="/About" element={<About />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
