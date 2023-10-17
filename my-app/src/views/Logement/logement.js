@@ -2,6 +2,7 @@ import "./logement.scss";
 import Header from "../../components/header/header";
 import Footer from "../../components/footer/footer";
 import Carrousel from "../../assets/Carrousel.png";
+import { Collapse } from "react-collapse";
 
 function Logement() {
   return (
@@ -19,10 +20,10 @@ function Logement() {
           <button className="btn"> Paris 10</button>
         </div>
 
-        <div className="btn-info">
-          <button className="btninfo">Description</button>
-          <button className="btninfo">Equipements</button>
-        </div>
+        <Collapse isOpened={true || false}>
+          <div className="btninfo">Description</div>
+          <div className="btninfo">Equipements</div>
+        </Collapse>
       </div>
       <Footer />
     </>

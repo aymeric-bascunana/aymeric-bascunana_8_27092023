@@ -9,12 +9,13 @@ function About() {
       <Header />
       <div className="banner">
         <p className="bannerImg"></p>
-
-        {/* <Collapse>
-          Flabilité
-          <div></div>
-        </Collapse> */}
       </div>
+      <Collapse isOpened={true || false}>
+        <div className="collapse">Flabilité</div>
+        <div className="collapse">Respect</div>
+        <div className="collapse">Service</div>
+        <div className="collapse">Sécurité</div>
+      </Collapse>
 
       <Footer />
     </>

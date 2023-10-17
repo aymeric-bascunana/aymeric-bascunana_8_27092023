@@ -9,3 +9,18 @@
   background-image: url("../../assets/ImgAbout.png");
   background-position: center;
 }
+
+.collapse {
+  background-color: rgb(255, 96, 96);
+  height: 40px;
+  width: 60%;
+  border-radius: 5px;
+  color: white;
+}
+.ReactCollapse--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
