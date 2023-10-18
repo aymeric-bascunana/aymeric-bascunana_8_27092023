@@ -24,11 +24,6 @@
   margin: 5px 0px 15px 0px;
 }
 
-.container-btn {
-  display: flex;
-  gap: 10px;
-}
-
 .btn {
   background-color: rgba(255, 96, 96, 1);
   color: white;
@@ -56,4 +51,26 @@
 
 .collapseContainer {
   display: flex;
+}
+
+.container-note {
+  display: flex;
+  justify-content: space-between;
+  .container-btn {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .container-stars {
+    font-size: 30px;
+
+    .star-filled {
+      color: rgb(255, 96, 96);
+    }
+
+    .star-empty {
+      color: rgba(196, 196, 196, 1);
+    }
+  }
 }
