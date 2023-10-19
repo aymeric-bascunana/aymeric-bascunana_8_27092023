@@ -8,6 +8,8 @@ import Error from "./views/Error/error";
 import Logement from "./views/Logement/logement";
 import About from "./views/About/about";
 import reportWebVitals from "./reportWebVitals";
+import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,12 +17,14 @@ root.render(
   //<App />
   <React.StrictMode>
     <BrowserRouter>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Error" element={<Error />} />
-        <Route path="/Logement" element={<Logement />} />
+        <Route path="/Logement/:id" element={<Logement />} />
         <Route path="/About" element={<About />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   </React.StrictMode>
 );

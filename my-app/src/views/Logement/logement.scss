@@ -13,10 +13,23 @@
   flex-direction: column;
   margin: 0px 125px 0px 125px;
 }
-.name-logement {
-  color: rgba(255, 96, 96, 1);
-  margin: 0px;
-  font-size: 30px;
+.container-nameID {
+  display: flex;
+  justify-content: space-between;
+  .name-logement {
+    color: rgba(255, 96, 96, 1);
+    margin: 0px;
+    font-size: 30px;
+  }
+
+  .nameID {
+    display: flex;
+    gap: 20px;
+  }
+  .surname {
+    color: rgb(255, 96, 96);
+    font-size: 20px;
+  }
 }
 
 .position {
