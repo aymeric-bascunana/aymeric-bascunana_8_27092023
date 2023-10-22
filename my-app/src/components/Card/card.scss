@@ -7,28 +7,24 @@
   color: white;
   display: flex;
   align-items: flex-end;
-  .imgcard {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  .CardImage {
     width: 100%;
-    height: 100%;
+    height: 240px;
+    background-size: cover;
+    background-position: center;
     object-fit: cover;
     border-radius: 10px;
   }
-}
 
-// .ContainerCard {
-//   display: flex;
-//   flex-wrap: wrap;
-//   gap: 90px;
-//   justify-content: center;
-// }
-
-// .imgcard {
-//   height: 300px;
-//   width: 125%;
-// }
-
-.pagelogement {
-  text-decoration: none;
-  color: white;
-  font-size: 15px;
+  .CardTitle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 15px;
+    color: white;
+    padding: 8px;
+  }
 }

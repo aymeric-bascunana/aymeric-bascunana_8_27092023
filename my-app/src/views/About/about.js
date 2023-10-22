@@ -1,4 +1,5 @@
 import "./about.scss";
+import Collapse from "../../components/Collapse/collapse";
 
 function About() {
   return (
@@ -6,10 +7,10 @@ function About() {
       <div className="banner">
         <p className="bannerImg"></p>
       </div>
-      {/* <div className="collapse">Flabilité</div>
-      <div className="collapse">Respect</div>
-      <div className="collapse">Service</div>
-      <div className="collapse">Sécurité</div> */}
+      <Collapse title="Flabilité" content="Contenu du collapse Flabilité" />
+      <Collapse title="Respect" content="Contenu du collapse Respect" />
+      <Collapse title="Service" content="Contenu du collapse Service" />
+      <Collapse title="Sécurité" content="Contenu du collapse Sécurité" />
     </>
   );
 }
