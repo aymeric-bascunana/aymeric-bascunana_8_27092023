@@ -1,32 +1,49 @@
 import "./carousel.scss";
 import React, { useState } from "react";
+import { useParams } from "react-router-dom";
+import logementData from "../../data/logements.json";
 
-const Carousel = ({ pictures }) => {
+const Carousel = ({ Logement }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
+  const { id } = useParams();
+  const logement = logementData.find((item) => item.id === id);
+
+  if (!logement) {
+    return <div>Logement non trouvé</div>;
+  }
+
+  if (!logement.pictures) {
+    return <div>Aucune image disponible pour ce logement</div>;
+  }
+
   const nextImage = () => {
-    setCurrentImageIndex((currentImageIndex + 1) % pictures.length);
+    setCurrentImageIndex((currentImageIndex + 1) % logement.pictures.length);
   };
 
   const prevImage = () => {
     setCurrentImageIndex(
-      currentImageIndex === 0 ? pictures.length - 1 : currentImageIndex - 1
+      currentImageIndex === 0
+        ? logement.pictures.length - 1
+        : currentImageIndex - 1
     );
   };
 
   return (
-    <div className="carousel">
+    <>
+      <div className="cards">
+        <Carousel
+          pictures={logement.pictures}
+          currentIndex={currentImageIndex}
+        />
+      </div>
       <button onClick={prevImage} className="arrow arrow_left">
         &lt;
       </button>
-      <img
-        src={pictures[currentImageIndex]}
-        alt={`Image ${currentImageIndex}`}
-      />
       <button onClick={nextImage} className="arrow arrow_right">
         &gt;
       </button>
-    </div>
+    </>
   );
 };
 

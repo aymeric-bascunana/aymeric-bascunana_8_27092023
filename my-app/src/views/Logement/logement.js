@@ -5,86 +5,49 @@ import Star from "../../components/Star/star";
 import logo from "../../assets/Host.png";
 import { useParams } from "react-router-dom";
 import logementData from "../../data/logements.json";
+import Carousel from "../../components/Carousel/carousel";
 
 function Logement() {
-  // Recupère le bon logement pour pouvoir afficher ses informations (parametre id de la route)
-
   const { id } = useParams();
   const logement = logementData.find((item) => item.id === id);
 
-  if (!logement) {
-    return <div>Logement non trouvé</div>;
-  }
-  <>
-    {/* const pictureList = logements.map((logement, index) = (
-      <Carousel key={index} pictures={logement.pictures} />
-      )); */}
-    {/* let slideIndex = 0;
-const slideNbr = slides.length;
+  const pictureList = logement.pictures.map((picture, index) => (
+    <Carousel key={index} pictures={logement.pictures} />
+  ));
 
-      <a class="prev">
-          <img
-            class="arrow arrow_left"
-            src="./assets/images/arrow_left.png"
-            alt="arrow_left"
-          />
-        </a>
-
-        <a class="next">
-          <img
-            class="arrow arrow_right"
-            src="./assets/images/arrow_right.png"
-            alt="arrow_right"
-          />
-
-      / Flèche gauche du carrousel
-      const arrowPrev = document.querySelector(".arrow_left");
-      arrowPrev.addEventListener("click", () => {
-         if (slideIndex === 0) {
-         slideIndex = slideNbr - 1;
-        } else {
-         slideIndex = slideIndex - 1;
-          }
-              showSlides(slideIndex);
-            });
-
-// Flèche droite du carrousel
-const arrowNext = document.querySelector(".arrow_right");
-arrowNext.addEventListener("click", () => {
-  if (slideIndex === slideNbr - 1) {
-    slideIndex = 0;
-  } else {
-    slideIndex = slideIndex + 1;
-  }
-  showSlides(slideIndex);
-}); */}
-    {/* <div className="cards">{pictureList}</div> */}
-    <div className="container-info">
-      <div className="container-nameID">
-        <h2 className="name-logement"> Cozy loft on the Canal Saint-Martin </h2>
-        <div className="nameID">
-          <p className="surname">Alexandre Dumas</p>
-          <img className="profil" src={logo}></img>
+  return (
+    <>
+      <div className="cards">{pictureList}</div>
+      <div className="container-info">
+        <div className="container-nameID">
+          <h2 className="name-logement">
+            {" "}
+            Cozy loft on the Canal Saint-Martin{" "}
+          </h2>
+          <div className="nameID">
+            <p className="surname">Alexandre Dumas</p>
+            <img className="profil" src={logo}></img>
+          </div>
         </div>
-      </div>
-      <p className="position">Paris, île-de-France </p>
-      <div className="container-note">
-        <div className="container-btn">
-          {/* <Tag label="Cozy" />
+        <p className="position">Paris, île-de-France </p>
+        <div className="container-note">
+          <div className="container-btn">
+            {/* <Tag label="Cozy" />
             <Tag label="Canal" />
             <Tag label="Paris 10" /> */}
-        </div>
+          </div>
 
-        <div className="container-stars">
-          {/* <Star filled={true} />
+          <div className="container-stars">
+            {/* <Star filled={true} />
             <Star filled={true} />
             <Star filled={true} />
             <Star filled={false} />
             <Star filled={false} /> */}
+          </div>
         </div>
       </div>
-    </div>
-  </>;
+    </>
+  );
 }
 
 export default Logement;
