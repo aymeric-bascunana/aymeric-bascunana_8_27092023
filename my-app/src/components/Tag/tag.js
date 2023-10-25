@@ -1,7 +1,7 @@
 import React from "react";
 
-function Tag(props) {
-  return <button className="btn">{props.label}</button>;
+function Tag(tag) {
+  return <button className="btn">{tag.tag}</button>;
 }
 
 export default Tag;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./collapse.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Collapse = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);

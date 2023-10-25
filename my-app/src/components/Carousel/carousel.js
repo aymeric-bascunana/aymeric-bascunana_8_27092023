@@ -1,49 +1,35 @@
-import "./carousel.scss";
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
-import logementData from "../../data/logements.json";
+import "./carousel.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
-const Carousel = ({ Logement }) => {
+const Carousel = ({ pictures }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  const { id } = useParams();
-  const logement = logementData.find((item) => item.id === id);
-
-  if (!logement) {
-    return <div>Logement non trouvé</div>;
-  }
-
-  if (!logement.pictures) {
-    return <div>Aucune image disponible pour ce logement</div>;
-  }
-
   const nextImage = () => {
-    setCurrentImageIndex((currentImageIndex + 1) % logement.pictures.length);
+    setCurrentImageIndex((currentImageIndex + 1) % pictures.length);
   };
 
   const prevImage = () => {
     setCurrentImageIndex(
-      currentImageIndex === 0
-        ? logement.pictures.length - 1
-        : currentImageIndex - 1
+      currentImageIndex === 0 ? pictures.length - 1 : currentImageIndex - 1
     );
   };
 
   return (
-    <>
-      <div className="cards">
-        <Carousel
-          pictures={logement.pictures}
-          currentIndex={currentImageIndex}
-        />
-      </div>
+    <div className="carousel">
+      <img
+        src={pictures[currentImageIndex]}
+        alt="Carousel"
+        className="carouselimage"
+      />
       <button onClick={prevImage} className="arrow arrow_left">
-        &lt;
+        <FontAwesomeIcon icon="faArrowLeft" />
       </button>
       <button onClick={nextImage} className="arrow arrow_right">
-        &gt;
+        <FontAwesomeIcon icon="faArrowRight" />
       </button>
-    </>
+    </div>
   );
 };
 
