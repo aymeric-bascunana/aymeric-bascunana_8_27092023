@@ -13,8 +13,6 @@ function Header() {
         <NavLink className="lien" to="/About">
           A Propos
         </NavLink>
-        {/* <a className="lien"> Accueil </a>
-        <a className="lien"> A Propos</a> */}
       </nav>
     </header>
   );

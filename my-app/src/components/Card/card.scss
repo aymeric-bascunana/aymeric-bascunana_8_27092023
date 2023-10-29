@@ -2,7 +2,7 @@
   background-color: rgba(255, 96, 96, 1);
   border-radius: 10px;
   width: 20%;
-  height: 240px;
+  height: 340px;
   font-size: 10px;
   color: white;
   display: flex;
@@ -12,7 +12,7 @@
   text-decoration: none;
   .CardImage {
     width: 100%;
-    height: 240px;
+    height: 340px;
     background-size: cover;
     background-position: center;
     object-fit: cover;
@@ -26,5 +26,19 @@
     font-size: 15px;
     color: white;
     padding: 8px;
+  }
+  .CardImage::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0)
+    );
+    z-index: 1;
   }
 }

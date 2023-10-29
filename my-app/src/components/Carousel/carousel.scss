@@ -1,5 +1,35 @@
 .carouselimage {
-  width: 90%;
+  width: 100%;
   height: 400px;
   object-fit: cover;
+}
+
+.carousel {
+  position: relative;
+  margin: 20px 50px;
+
+  .arrow {
+    background: transparent;
+    border: none;
+    font-size: 70px;
+    color: white;
+    position: absolute;
+    top: 40%;
+  }
+
+  .arrow_left {
+    left: 20px;
+  }
+
+  .arrow_right {
+    right: 20px;
+  }
+}
+
+.carousel-number {
+  color: white;
+  position: absolute;
+  bottom: 15px;
+  left: 850px;
+  font-size: 20px;
 }

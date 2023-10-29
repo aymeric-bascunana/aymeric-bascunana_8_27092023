@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import "./carousel.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faChevronLeft,
+  faChevronRight,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Carousel = ({ pictures }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -16,6 +19,8 @@ const Carousel = ({ pictures }) => {
     );
   };
 
+  const shouldShowArrowsAndDots = pictures.length > 1;
+
   return (
     <div className="carousel">
       <img
@@ -23,12 +28,30 @@ const Carousel = ({ pictures }) => {
         alt="Carousel"
         className="carouselimage"
       />
-      <button onClick={prevImage} className="arrow arrow_left">
-        <FontAwesomeIcon icon="faArrowLeft" />
-      </button>
-      <button onClick={nextImage} className="arrow arrow_right">
-        <FontAwesomeIcon icon="faArrowRight" />
-      </button>
+      {shouldShowArrowsAndDots && (
+        <React.Fragment>
+          <button onClick={prevImage} className="arrow arrow_left">
+            <FontAwesomeIcon icon={faChevronLeft} />
+          </button>
+          <button onClick={nextImage} className="arrow arrow_right">
+            <FontAwesomeIcon icon={faChevronRight} />
+          </button>
+          <div className="carousel-dots">
+            {pictures.map((picture, index) => (
+              <span
+                key={index}
+                className={`dot ${currentImageIndex === index ? "active" : ""}`}
+                onClick={() => setCurrentImageIndex(index)}
+              ></span>
+            ))}
+          </div>
+        </React.Fragment>
+      )}
+      {shouldShowArrowsAndDots && (
+        <div className="carousel-number">
+          {currentImageIndex + 1}/{pictures.length}
+        </div>
+      )}
     </div>
   );
 };

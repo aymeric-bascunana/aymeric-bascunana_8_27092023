@@ -94,6 +94,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin: 0px 30px;
 
   .host {
     display: flex;
@@ -110,4 +111,8 @@
 .info {
   display: flex;
   gap: 45px;
+}
+
+.evaluation {
+  margin: 0px 30px;
 }

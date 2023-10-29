@@ -20,9 +20,9 @@ root.render(
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Error" element={<Error />} />
         <Route path="/Logement/:id" element={<Logement />} />
         <Route path="/About" element={<About />} />
+        <Route path="*" element={<Error />} />
       </Routes>
       <Footer />
     </BrowserRouter>

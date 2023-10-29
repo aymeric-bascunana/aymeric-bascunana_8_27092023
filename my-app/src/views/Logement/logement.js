@@ -7,15 +7,17 @@ import { useParams } from "react-router-dom";
 import logementData from "../../data/logements.json";
 import Carousel from "../../components/Carousel/carousel";
 import Collapse from "../../components/Collapse/collapse";
+import Error from "../Error/error";
 
 function Logement() {
   const { id } = useParams();
   const logement = logementData.find((item) => item.id === id);
-  const filledStarsCount = Math.min(5, Math.round(logement.rating));
 
   if (!logement) {
-    return <div>Logement non trouvé</div>;
+    return <Error />;
   }
+
+  const filledStarsCount = Math.min(5, Math.round(logement.rating));
 
   return (
     <div className="logement">
