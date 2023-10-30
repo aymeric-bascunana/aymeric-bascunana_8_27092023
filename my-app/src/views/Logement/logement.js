@@ -1,4 +1,5 @@
 import "./logement.scss";
+import "./ResponsiveLogement.scss";
 import React from "react";
 import Tag from "../../components/Tag/tag";
 import Star from "../../components/Star/star";

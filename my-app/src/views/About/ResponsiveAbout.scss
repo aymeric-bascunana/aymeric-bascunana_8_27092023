@@ -1,0 +1,13 @@
+@media (max-width: 576px) {
+  .bannerImg {
+    width: 90%;
+  }
+
+  .container-collapse {
+    display: flex;
+    align-items: flex-start;
+    .collapse {
+      width: 90%;
+    }
+  }
+}

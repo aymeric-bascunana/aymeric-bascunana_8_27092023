@@ -1,5 +1,6 @@
 import React from "react";
 import "../home/Home.scss";
+import "../home/ResponsiveHome.scss";
 import Banner from "../../components/banner/banner";
 
 import logements from "../../data/logements.json";
