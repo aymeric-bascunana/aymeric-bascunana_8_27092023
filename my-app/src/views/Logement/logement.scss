@@ -41,7 +41,7 @@
   background-color: rgba(255, 96, 96, 1);
   color: white;
   border-radius: 10px;
-  width: 7%;
+
   height: 25px;
   border: none;
   margin: 5px;
@@ -89,23 +89,11 @@
   }
 }
 
-.profil {
+.info-lieu {
   color: rgb(255, 96, 96);
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   margin: 0px 30px;
-
-  .host {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-
-    .imgProfil {
-      border-radius: 65px;
-      width: 40%;
-    }
-  }
 }
 
 .info {
@@ -113,6 +101,28 @@
   gap: 45px;
 }
 
-.evaluation {
+.info-profil {
   margin: 0px 30px;
+  color: rgb(255, 96, 96);
+  display: flex;
+  flex-direction: column;
+}
+.host {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .imgProfil {
+    border-radius: 65px;
+    height: 60px;
+  }
+}
+
+.container-profil {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  font-size: 35px;
 }

@@ -23,34 +23,32 @@ function Logement() {
   return (
     <div className="logement">
       <Carousel pictures={logement.pictures} />
-      <div className="profil">
-        <div className="Name">
-          <h2>{logement.title}</h2>
-          <p>{logement.location}</p>
-        </div>
-
-        <div className="host">
-          <span>{logement.host.name}</span>
-          <img
-            src={logement.host.picture}
-            alt={logement.host.name}
-            className="imgProfil"
-          />
-        </div>
-      </div>
-      <div className="evaluation">
-        <div className="tags">
-          {logement.tags.map((tag, index) => (
-            <Tag key={index} tag={tag} />
-          ))}
-        </div>
-
-        <div className="rating">
-          {Array(5)
-            .fill(null)
-            .map((_, index) => (
-              <Star key={index} filled={index < filledStarsCount} />
+      <div className="container-profil">
+        <div className="info-lieu">
+          <h2 className="name-appartement">{logement.title}</h2>
+          <p className="name-city">{logement.location}</p>
+          <div className="tags">
+            {logement.tags.map((tag, index) => (
+              <Tag key={index} tag={tag} />
             ))}
+          </div>
+        </div>
+        <div className="info-profil">
+          <div className="host">
+            <span>{logement.host.name}</span>
+            <img
+              src={logement.host.picture}
+              alt={logement.host.name}
+              className="imgProfil"
+            />
+          </div>
+          <div className="rating">
+            {Array(5)
+              .fill(null)
+              .map((_, index) => (
+                <Star key={index} filled={index < filledStarsCount} />
+              ))}
+          </div>
         </div>
       </div>
       <div className="info">

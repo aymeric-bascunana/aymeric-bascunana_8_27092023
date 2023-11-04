@@ -31,4 +31,27 @@
       width: 89%;
     }
   }
+
+  .info-profil {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    .imgProfil {
+      height: 80px;
+    }
+  }
+
+  .container-profil {
+    display: flex;
+    flex-direction: column;
+  }
+  .name-appartement {
+    margin: 0;
+  }
+
+  .info-lieu {
+    font-size: 20px;
+  }
 }
