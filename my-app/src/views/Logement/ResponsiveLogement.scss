@@ -18,7 +18,7 @@
 
   .tags {
     .btn {
-      width: 19%;
+      width: max-content;
     }
   }
 
@@ -28,7 +28,7 @@
     gap: 0;
 
     .collapse {
-      width: 89%;
+      width: auto;
     }
   }
 
@@ -37,9 +37,11 @@
     flex-direction: row-reverse;
     align-items: center;
     justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 10px;
 
     .imgProfil {
-      height: 80px;
+      height: 40px;
     }
   }
 
@@ -49,6 +51,8 @@
   }
   .name-appartement {
     margin: 0;
+    font-family: montserrat;
+    font-weight: 500;
   }
 
   .info-lieu {

@@ -1,6 +1,6 @@
-// import "./banner.css";
 import logo from "../../assets/LOGO.png";
 import { NavLink } from "react-router-dom";
+import "./ResponsiveHeader.scss";
 
 function Header() {
   return (

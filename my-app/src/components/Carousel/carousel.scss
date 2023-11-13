@@ -1,13 +1,12 @@
 .carouselimage {
   width: 100%;
-  height: 400px;
+  height: 255px; //mobil
   object-fit: cover;
   border-radius: 20px;
 }
 
 .carousel {
   position: relative;
-  margin: 20px 50px;
 
   .arrow {
     background: transparent;

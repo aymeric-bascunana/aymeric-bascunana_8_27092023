@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./carousel.scss";
+import "./ResponsiveCarousel.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChevronLeft,

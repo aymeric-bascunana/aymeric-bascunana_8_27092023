@@ -4,12 +4,21 @@
   height: 200px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 .logo-footer {
+  width: 122px;
+  height: 39px;
 }
 
 .text-footer {
+  color: white;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
 }

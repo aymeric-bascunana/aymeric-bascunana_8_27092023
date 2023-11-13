@@ -1,15 +1,15 @@
 .error-title {
-  color: rgba(255, 96, 96, 1);
-  font-size: 200px;
+  color: rgb(255, 96, 96);
+  font-size: 100px;
   text-align: center;
-  margin: 100px;
+
+  font-family: montserrat;
 }
 
 .error {
   color: rgba(255, 96, 96, 1);
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
-  margin: 100px;
 }
 
 .return-home {
@@ -17,5 +17,5 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  margin: 100px;
+  margin: 100px 0px;
 }

@@ -1,0 +1,16 @@
+@media (max-width: 576px) {
+  .carousel {
+    position: relative;
+    .arrow_right {
+      right: 20px;
+      font-size: 24px;
+      top: 50%;
+    }
+
+    .arrow_left {
+      left: 20px;
+      font-size: 24px;
+      top: 50%;
+    }
+  }
+}
