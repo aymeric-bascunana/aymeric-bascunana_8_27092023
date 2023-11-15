@@ -2,18 +2,33 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-}
+  .img-title {
+    border-radius: 10px;
+    width: 90%;
+    height: 190px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 30px;
+    background-image: url("../../assets/IMG.png");
+    background-position: center;
+    color: white;
+    background-size: cover;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 68px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
 
-.img-title {
-  border-radius: 10px;
-  width: 90%;
-  height: 190px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 30px;
-  background-image: url("../../assets/IMG.png");
-  background-position: center;
-  color: white;
-  background-size: cover;
+  .img-title::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 190px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1;
+  }
 }

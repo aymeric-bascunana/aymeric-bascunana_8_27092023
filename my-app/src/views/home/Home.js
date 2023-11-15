@@ -22,7 +22,7 @@ function Home() {
     <>
       <Banner title="Chez vous, partout et ailleurs" />
 
-      <section className="cards">{cardList}</section>
+      <main className="cards">{cardList}</main>
     </>
   );
 }
