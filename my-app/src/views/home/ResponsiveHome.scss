@@ -6,9 +6,12 @@
       display: flex;
       width: auto;
       height: 111px;
+      font-family: Montserrat;
       font-size: 24px;
-      font-weight: 500;
-      font-family: montserrat;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
     }
   }
 
@@ -29,5 +32,26 @@
 
   nav {
     text-transform: uppercase;
+    width: 190px;
+    height: 17px;
+    gap: 26px;
+  }
+
+  .lien {
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: right;
+  }
+
+  .header {
+    height: 46px;
+    gap: 37px;
+    .img-header {
+      width: 145px;
+      height: 46px;
+    }
   }
 }

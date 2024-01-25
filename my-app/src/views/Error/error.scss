@@ -1,21 +1,33 @@
 .error-title {
   color: rgb(255, 96, 96);
-  font-size: 100px;
+  font-family: Montserrat;
+  font-size: 288px;
+  font-weight: 700;
+  line-height: 411px;
+  letter-spacing: 0em;
   text-align: center;
-
-  font-family: montserrat;
+  margin: 0px;
 }
 
 .error {
   color: rgba(255, 96, 96, 1);
-  font-size: 25px;
+  font-family: Montserrat;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 51px;
+  letter-spacing: 0em;
   text-align: center;
 }
 
 .return-home {
-  color: rgba(255, 96, 96, 1);
+  color: black;
   text-align: center;
   display: flex;
   justify-content: center;
   margin: 100px 0px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
 }

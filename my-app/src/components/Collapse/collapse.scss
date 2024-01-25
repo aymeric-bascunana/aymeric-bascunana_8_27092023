@@ -11,20 +11,32 @@
   width: auto;
   border-radius: 5px;
   color: white;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .collapse-content {
   padding: 10px;
-  background: rgba(227, 227, 227, 1);
+  background: rgba(246, 246, 246, 0.4);
   height: 160px;
   margin-bottom: 20px;
   border-radius: 0px 0px 10px 10px;
-  color: red;
+  color: black;
   font-size: 20px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 .collapse .icon {
-  height: 12px;
+  height: 0px;
 
   font-size: 30px;
   position: relative;

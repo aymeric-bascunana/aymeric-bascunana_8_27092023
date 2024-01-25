@@ -4,7 +4,7 @@
   justify-content: space-between;
   margin: 40px 0;
   align-items: center;
-  padding: 0 20px;
+  padding: 0 50px;
 }
 
 .img-header {
@@ -12,15 +12,20 @@
 }
 
 .lien {
-  color: rgba(255, 96, 96, 1);
+  color: black;
   //12 n  mobil  font-size: 12px;
   text-decoration: none;
   //mobil text-transform: uppercase;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: right;
 }
 
 .lien:hover {
   border-bottom: solid 1px;
-  margin-bottom: 40px;
 }
 
 nav {

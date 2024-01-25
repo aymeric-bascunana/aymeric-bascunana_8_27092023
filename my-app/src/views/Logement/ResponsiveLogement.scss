@@ -19,6 +19,12 @@
   .tags {
     .btn {
       width: max-content;
+      font-family: Montserrat;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: center;
     }
   }
 
@@ -29,6 +35,7 @@
 
     .collapse {
       width: auto;
+      margin: 10px 0px 10px 0px;
     }
   }
 
@@ -51,8 +58,21 @@
   }
   .name-appartement {
     margin: 0;
-    font-family: montserrat;
+    font-family: Montserrat;
+    font-size: 18px;
     font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .name-city {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
   }
 
   .info-lieu {

@@ -1,5 +1,13 @@
 @media (max-width: 576px) {
   .carousel {
+    width: 335px;
+    height: 255px;
+    border-radius: 10px;
+    .carouselimage {
+      width: 335px;
+      height: 255px;
+      border-radius: 10px;
+    }
     position: relative;
     .arrow_right {
       right: 20px;
