@@ -2,9 +2,9 @@ import "./banner.scss";
 
 function Banner({ title, textColor }) {
   return (
-    <div className="banner">
+    <section className="banner">
       {title && <p className="img-title">{title}</p>}
-    </div>
+    </section>
   );
 }
 
