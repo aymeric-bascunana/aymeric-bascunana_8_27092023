@@ -1,5 +1,4 @@
 import "./about.scss";
-import "./ResponsiveAbout.scss";
 import Collapse from "../../components/Collapse/collapse";
 
 function About() {

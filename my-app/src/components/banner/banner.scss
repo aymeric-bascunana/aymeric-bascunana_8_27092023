@@ -2,33 +2,44 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  .img-title {
+  .img-banner {
     border-radius: 10px;
     width: 90%;
     height: 190px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 30px;
-    background-image: url("../../assets/IMG.png");
+    z-index: 0;
+    position: relative;
+    object-fit: cover;
+    filter: brightness(0.5);
+    margin-bottom: 50px;
+  }
+  .img-title {
     background-position: center;
     color: white;
     background-size: cover;
     font-family: Montserrat;
     font-size: 48px;
     font-weight: 700;
-    line-height: 68px;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-
-  .img-title::before {
-    content: "";
+    line-height: 90px;
     position: absolute;
-    width: 90%;
-    height: 190px;
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    z-index: 1;
+  }
+}
+
+@media (max-width: 576px) {
+  .banner {
+    display: flex;
+    justify-content: center;
+    .img-banner {
+      width: 335px;
+      height: 111px;
+      border: 1px;
+      margin-bottom: 20px;
+    }
+    .img-title {
+      width: 225px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      left: 85px;
+    }
   }
 }

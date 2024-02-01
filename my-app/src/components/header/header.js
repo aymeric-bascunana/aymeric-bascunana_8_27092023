@@ -1,16 +1,16 @@
 import logo from "../../assets/LOGO.png";
 import { NavLink } from "react-router-dom";
-import "./ResponsiveHeader.scss";
+import "./header.scss";
 
 function Header() {
   return (
     <header className="header">
       <img className="img-header" src={logo}></img>
       <nav>
-        <NavLink className="lien" to="/">
+        <NavLink className="lien" activeClassName="active" exact to="/">
           Accueil
         </NavLink>
-        <NavLink className="lien" to="/About">
+        <NavLink className="lien" activeClassName="active" to="/About">
           A Propos
         </NavLink>
       </nav>

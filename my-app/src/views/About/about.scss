@@ -25,3 +25,17 @@
   gap: 25px;
   margin-bottom: 30px;
 }
+
+@media (max-width: 576px) {
+  .bannerImg {
+    width: 90%;
+  }
+
+  .container-collapse {
+    display: flex;
+    align-items: center;
+    .collapse {
+      width: 90%;
+    }
+  }
+}

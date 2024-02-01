@@ -116,6 +116,8 @@
   line-height: 26px;
   letter-spacing: 0em;
   text-align: right;
+  gap: 40px;
+  margin-top: 10px;
 }
 .host {
   display: flex;
@@ -160,4 +162,99 @@
   text-align: left;
   margin: 5px 0px 20px 0px;
   color: black;
+}
+
+span {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: right;
+  width: 93px;
+  height: 52px;
+  top: 608px;
+  left: 1170px;
+}
+
+@media (max-width: 576px) {
+  .carousel-number {
+    position: absolute;
+    left: 245px;
+  }
+
+  .profil {
+    display: flex;
+    flex-direction: column;
+    .Name {
+      font-size: 25px;
+    }
+    .host {
+      position: relative;
+      top: 75px;
+    }
+  }
+
+  .tags {
+    .btn {
+      width: max-content;
+      font-family: Montserrat;
+      font-size: 10px;
+      font-weight: 700;
+      line-height: 14px;
+      letter-spacing: 0em;
+      text-align: center;
+    }
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+
+    .collapse {
+      width: auto;
+      margin: 10px 0px 10px 0px;
+    }
+  }
+
+  .info-profil {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 10px;
+
+    .imgProfil {
+      height: 40px;
+    }
+  }
+
+  .container-profil {
+    display: flex;
+    flex-direction: column;
+  }
+  .name-appartement {
+    margin: 0;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .name-city {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .info-lieu {
+    font-size: 20px;
+  }
 }
