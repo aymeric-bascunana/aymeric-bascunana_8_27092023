@@ -31,3 +31,13 @@
   line-height: 20px;
   letter-spacing: 0em;
 }
+
+@media (max-width: 576px) {
+  .error-title {
+    font-size: 130px;
+  }
+
+  .error {
+    font-size: 24px;
+  }
+}
