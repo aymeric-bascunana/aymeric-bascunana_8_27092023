@@ -18,6 +18,7 @@ function Logement() {
   }
 
   const filledStarsCount = Math.min(5, Math.round(logement.rating));
+  console.log(filledStarsCount);
 
   return (
     <div className="logement">
@@ -46,6 +47,7 @@ function Logement() {
               .fill(null)
               .map((_, index) => (
                 <Star key={index} filled={index < filledStarsCount} />
+                // <p>{index < filledStarsCount}</p>
               ))}
           </div>
         </div>
